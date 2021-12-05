@@ -1,8 +1,8 @@
 syms r1 r2 r3 r4 v1 v2 v3 v4 a1 a2 a3 a4 th1 th2 th3 th4 w1 w2 w3 w4 al1 al2 al3 al4 t
 
-t = linspace(0, 1.2, 288)
+t = linspace(0, 1.2, 144)
 
-th2 = 180*sin(pi*t/0.3 - pi/2) + 180
+th2 = 180*sin(pi*t/0.6 - pi/2) + 180
 
 w2 = 10.47
 
