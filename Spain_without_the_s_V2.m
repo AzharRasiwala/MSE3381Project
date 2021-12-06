@@ -20,6 +20,10 @@ plot(t,v4(t))
 figure()
 plot(t,a4(t))
 
-% writematrix(r4, 'Position.csv')
-% writematrix(v4, 'Velocity.csv')
-% writematrix(a4, 'Aceleration.csv')
+d1 = double(r4(t))
+d2 = double(v4(t))
+d3 = double(a4(t))
+
+writematrix(d1, 'Position.csv')
+writematrix(d2, 'Velocity.csv')
+writematrix(d3, 'Aceleration.csv')
