@@ -5,8 +5,7 @@ r2=0.2
 r3=1.2
 w2 = 600
 % r4 comes from pos i subbed into pos j component 
-% add constant as the position of the stock center is 0.22 meter below the
-% connecting point of punch and r4
+% add constant as the position of the stock 
 r4(t) = -(r2*sind(w2*t) + r3*sind( acosd( (r1-r2*cosd(w2*t)) / r3 ) ) + 0.22)
 v4(t) = diff(r4,t)
 a4(t) = diff(v4,t)
