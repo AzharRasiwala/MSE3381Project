@@ -4,12 +4,12 @@ r1 = 0.02
 r2=0.2
 r3=1.2
 w2 = 600
-
-r4(t) = 0.2*sind(w2*t) + 1.2*sind( acosd( (r1-r2*cosd(w2*t)) / r3 ) )
+% r4 comes from pos i subbed into pos j component 
+r4(t) = r2*sind(w2*t) + r3*sind( acosd( (r1-r2*cosd(w2*t)) / r3 ) )
 v4(t) = diff(r4,t)
 a4(t) = diff(v4,t)
 
-t = linspace(0, 1.2,1000);
+t = linspace(0, 1.2, 288);
 th2 = 600*t
 
 plot (t, r4(t))
