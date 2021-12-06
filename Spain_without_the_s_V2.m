@@ -12,11 +12,11 @@ a4(t) = diff(v4,t)
 t = linspace(0, 1.2,1000);
 th2 = 600*t
 
-plot (th2, r4(t))
+plot (t, r4(t))
 figure()
-plot(th2,v4(t))
+plot(t,v4(t))
 figure()
-plot(th2,a4(t))
+plot(t,a4(t))
 
 % writematrix(r4, 'Position.csv')
 % writematrix(v4, 'Velocity.csv')
